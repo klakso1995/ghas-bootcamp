@@ -7,7 +7,7 @@ conn = sqlite3.connect("test.db")
 cursor = conn.cursor()
  
 # Create a sample users table (for demo purposes)
-
+ 
 cursor.execute("DROP TABLE IF EXISTS users")  # Remove old table
 
 cursor.execute("CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, password TEXT)")
